@@ -1,0 +1,147 @@
+.medications {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.meds-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.adherence-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #d1fae5;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+}
+.score-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.meds-card {
+  height: 100%;
+}
+
+.card-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.med-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.time-label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.med-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--surface);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+}
+
+.med-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--text-muted);
+}
+
+.completed .med-icon {
+  background-color: var(--success);
+  color: white;
+}
+
+.alert {
+  background-color: #fef3c7;
+  color: var(--warning);
+}
+
+.med-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.med-details strong { font-size: 0.95rem; }
+.med-details span { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+
+.time-taken {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 500;
+}
+
+.savings-card {
+  border-color: #bbf7d0;
+  background-color: #f0fdf4;
+}
+
+.saving-item {
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #bbf7d0;
+}
+
+.saving-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.suggestion .badge { width: fit-content; }
+
+.pharmacy-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #d1fae5;
+}
+
+.refill-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

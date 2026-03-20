@@ -1,0 +1,211 @@
+.doc-assist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.doc-header {
+  margin-bottom: 0.5rem;
+}
+
+.doc-layout {
+  grid-template-columns: 1.5fr 1fr;
+  align-items: stretch;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--background);
+}
+
+.video-feed {
+  background-color: #1e293b;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-height: 400px;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+}
+
+.doctor-info-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.doc-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.doc-spec {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.rec-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.ai-caption-overlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  backdrop-filter: blur(4px);
+}
+.ai-caption-overlay strong {
+  color: #93c5fd;
+  margin-right: 0.5rem;
+}
+
+.video-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.control-btn {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--text-main);
+}
+.control-btn:hover {
+  background-color: var(--surface-hover);
+}
+
+.end-call {
+  background-color: var(--danger);
+  color: white;
+  border: none;
+  width: auto;
+  border-radius: var(--radius-full);
+  padding: 0 1.5rem;
+}
+.end-call svg { color: white; }
+.end-call:hover { background-color: #dc2626; }
+
+.ai-copilot {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.copilot-header {
+  padding: 1rem 1.5rem;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copilot-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copilot-panel {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+}
+
+.copilot-section {
+  background-color: var(--background);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+.section-title svg { color: var(--primary); }
+
+.note-content {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--surface);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+}
+
+.alert-section {
+  border-color: #fca5a5;
+  background-color: #fef2f2;
+}
+
+.alert-section .section-title, .alert-section .section-title svg {
+  color: var(--danger);
+}
+
+.text-sm { font-size: 0.8rem; }
+.pb-0 { padding-bottom: 0; }
+
+.rx-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--surface);
+  border-radius: var(--radius-sm);
+}
+
+.rx-details {
+  display: flex;
+  flex-direction: column;
+}
+.rx-details strong { font-size: 0.9rem; }
+.rx-details span { font-size: 0.75rem; color: var(--text-muted); }
+
+.mt-2 { margin-top: 0.75rem; }
